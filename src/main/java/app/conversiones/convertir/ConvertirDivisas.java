@@ -1,6 +1,12 @@
 package app.conversiones.convertir;
 
 import org.json.JSONObject;
+import app.conversiones.divisas.EUR;
+import app.conversiones.divisas.GBP;
+import app.conversiones.divisas.JPY;
+import app.conversiones.divisas.KRW;
+import app.conversiones.divisas.MXN;
+import app.conversiones.divisas.USD;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -21,11 +27,31 @@ public class ConvertirDivisas {
             if (respuesta.statusCode() == 200) {
                 JSONObject respuestaJSON = new JSONObject(respuesta.body());
                 conversion = respuestaJSON.getJSONObject("rates").getDouble(to);
+                System.out.println(respuesta.body());
             } else {
                 throw new Exception();
             }
         } catch (Exception e) {
-            conversion = -1;
+            switch (from) {
+                case "KRW":
+                    conversion = KRW.getKRW().convertir(to, amount);
+                    break;
+                case "MXN":
+                    conversion = MXN.getMXN().convertir(to, amount);
+                    break;
+                case "EUR":
+                    conversion = EUR.getEUR().convertir(to, amount);
+                    break;
+                case "GBP":
+                    conversion = GBP.getGBP().convertir(to, amount);
+                    break;
+                case "JPY":
+                    conversion = JPY.getJPY().convertir(to, amount);
+                    break;
+                case "USD":
+                    conversion = USD.getUSD().convertir(to, amount);
+                    break;
+            }
         }
         return conversion;
     }
