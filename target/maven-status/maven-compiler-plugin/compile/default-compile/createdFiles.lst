@@ -1,11 +1,11 @@
+app/conversiones/divisas/MXN.class
 app/conversiones/divisas/JPY.class
 app/conversiones/divisas/Divisa.class
+app/conversiones/convertir/ConvertirLongitud.class
 app/conversiones/gui/GUI$1.class
-app/conversiones/divisas/ExchangeRatesAPI.class
 app/conversiones/divisas/GBP.class
 app/conversiones/gui/GUI.class
-app/conversiones/divisas/COP.class
 app/conversiones/divisas/USD.class
-app/conversiones/Prueba.class
 app/conversiones/divisas/KRW.class
 app/conversiones/divisas/EUR.class
+app/conversiones/convertir/ConvertirDivisas.class

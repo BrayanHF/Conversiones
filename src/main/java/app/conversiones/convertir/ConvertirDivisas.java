@@ -33,24 +33,12 @@ public class ConvertirDivisas {
             }
         } catch (Exception e) {
             switch (from) {
-                case "KRW":
-                    conversion = KRW.getKRW().convertir(to, amount);
-                    break;
-                case "MXN":
-                    conversion = MXN.getMXN().convertir(to, amount);
-                    break;
-                case "EUR":
-                    conversion = EUR.getEUR().convertir(to, amount);
-                    break;
-                case "GBP":
-                    conversion = GBP.getGBP().convertir(to, amount);
-                    break;
-                case "JPY":
-                    conversion = JPY.getJPY().convertir(to, amount);
-                    break;
-                case "USD":
-                    conversion = USD.getUSD().convertir(to, amount);
-                    break;
+                case "KRW" -> conversion = KRW.getKRW().convertir(to, amount);
+                case "MXN" -> conversion = MXN.getMXN().convertir(to, amount);
+                case "EUR" -> conversion = EUR.getEUR().convertir(to, amount);
+                case "GBP" -> conversion = GBP.getGBP().convertir(to, amount);
+                case "JPY" -> conversion = JPY.getJPY().convertir(to, amount);
+                case "USD" -> conversion = USD.getUSD().convertir(to, amount);
             }
         }
         return conversion;

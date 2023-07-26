@@ -1,2 +1,10 @@
-/home/brayan/Code/Java/conversiones/src/main/java/app/conversiones/gui/GUI.java
-/home/brayan/Code/Java/conversiones/src/main/java/app/conversiones/Main.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/USD.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/GBP.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/EUR.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/KRW.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/JPY.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/MXN.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/convertir/ConvertirDivisas.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/convertir/ConvertirLongitud.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/gui/GUI.java
+/home/brayan/Code/Java/Conversiones/src/main/java/app/conversiones/divisas/Divisa.java

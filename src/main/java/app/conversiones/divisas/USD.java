@@ -23,21 +23,11 @@ public class USD implements Divisa {
     public double convertir(String to, double amount) {
         double conversion = 0;
         switch (to) {
-            case "KRW":
-                conversion = amount * cKRW;
-                break;
-            case "MXN":
-                conversion = amount * cMXN;
-                break;
-            case "EUR":
-                conversion = amount * cEUR;
-                break;
-            case "GBP":
-                conversion = amount * cGBP;
-                break;
-            case "JPY":
-                conversion = amount * cJPY;
-                break;
+            case "KRW" -> conversion = amount * cKRW;
+            case "MXN" -> conversion = amount * cMXN;
+            case "EUR" -> conversion = amount * cEUR;
+            case "GBP" -> conversion = amount * cGBP;
+            case "JPY" -> conversion = amount * cJPY;
         }
         return conversion;
     }
