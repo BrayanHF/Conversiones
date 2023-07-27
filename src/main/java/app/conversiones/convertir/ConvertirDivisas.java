@@ -27,7 +27,6 @@ public class ConvertirDivisas {
             if (respuesta.statusCode() == 200) {
                 JSONObject respuestaJSON = new JSONObject(respuesta.body());
                 conversion = respuestaJSON.getJSONObject("rates").getDouble(to);
-                System.out.println(respuesta.body());
             } else {
                 throw new Exception();
             }
