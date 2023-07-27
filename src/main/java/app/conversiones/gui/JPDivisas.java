@@ -204,7 +204,7 @@ public class JPDivisas extends javax.swing.JPanel {
     private void lbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbtnMouseClicked
         text.setText("");
         lberror.setText(valNum(amount.getText()));
-        if (lberror.getText().equals(" ")) {
+        if (lberror.getText().equals(" ") && !amount.getText().isEmpty()) {
             double cantidad = Double.parseDouble(amount.getText().replace(",", "."));
             String fromDivisa = (String) from.getSelectedItem();
             String toDivisa = (String) to.getSelectedItem();
@@ -232,8 +232,6 @@ public class JPDivisas extends javax.swing.JPanel {
         boolean valCant = text.matches("[0-9]*[,.]?[0-9]*");
         if (valNum || valPunt || valCant) {
             return " ";
-        } else if (text.equals("")) {
-            return "No se ha ingresado ningun valor";
         } else {
             return "Se ha ingresado un caracter no valido";
         }
